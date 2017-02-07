@@ -57,7 +57,9 @@ export default class Select extends BaseClass {
     const that = this;
 
     let container = this._container.selectAll(`select#d3plus-Select-${this._uuid}`).data([0]);
-    container = container.enter().append("select")
+    const svg = this._container.node().tagName.toLowerCase() === "foreignobject";
+
+    container = container.enter().append(svg ? "xhtml:select" : "select")
         .attr("id", `d3plus-Select-${this._uuid}`)
         .attr("class", "d3plus-Select")
       .merge(container)
@@ -83,9 +85,9 @@ export default class Select extends BaseClass {
         .html((d, i) => this._text(d, i))
         .property("selected", (d, i) => this._selected === void 0 ? !i : `${this._value(d, i)}` === `${this._selected}`);
 
-    const label = this._container.selectAll(`select#d3plus-Label-${this._uuid}`).data(this._label ? [0] : []);
+    const label = this._container.selectAll(`label#d3plus-Label-${this._uuid}`).data(this._label ? [0] : []);
     label.exit().remove();
-    label.enter().insert("label", `#d3plus-Select-${this._uuid}`)
+    label.enter().insert(svg ? "xhtml:label" : "label", `#d3plus-Select-${this._uuid}`)
         .attr("id", `d3plus-Label-${this._uuid}`)
         .attr("class", "d3plus-Label")
         .attr("for", `d3plus-Select-${this._uuid}`)
