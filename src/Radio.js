@@ -83,7 +83,9 @@ export default class Radio extends BaseClass {
         .html((d, i) => this._text(d, i))
         .each(function(d, i) {
           const checked = that._checked === void 0 ? !i : `${that._value(d, i)}` === `${that._checked}`;
-          select(this).style("cursor", checked ? "default" : "pointer");
+          select(this)
+            .classed("active", checked)
+            .style("cursor", checked ? "default" : "pointer");
           const input = select(this.nextSibling)
             .property("checked", checked)
             .call(stylize, that._radioStyle)
@@ -92,7 +94,7 @@ export default class Radio extends BaseClass {
               that.checked(this.value);
               radios.each(function(d, i) {
                 const checked = `${that._value(d, i)}` === `${that._checked}`;
-                select(this).style("cursor", checked ? "default" : "pointer");
+                select(this).classed("active", checked).style("cursor", checked ? "default" : "pointer");
                 select(this.nextSibling).style("cursor", checked ? "default" : "pointer");
               });
             });
