@@ -3,7 +3,7 @@
     @see https://github.com/d3plus/d3plus-common#BaseClass
 */
 import {select} from "d3-selection";
-import {accessor, BaseClass, constant, prefix, stylize} from "d3plus-common";
+import {accessor, BaseClass, constant, stylize} from "d3plus-common";
 
 /**
     @class Select
@@ -38,8 +38,7 @@ export default class Select extends BaseClass {
       "font-family": "Verdana",
       "font-size": "12px",
       "outline": "0",
-      "padding": "3px 5px 4px",
-      [`${prefix()}appearance`]: "none"
+      "padding": "3px 5px 4px"
     };
     this._text = accessor("text");
     this._value = accessor("value");
