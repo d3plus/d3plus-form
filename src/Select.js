@@ -60,7 +60,7 @@ export default class Select extends BaseClass {
 
     container = container.enter().append(svg ? "xhtml:div" : "div")
         .attr("id", `d3plus-Form-${this._uuid}`)
-        .attr("class", "d3plus-Form")
+        .attr("class", "d3plus-Form d3plus-Form-Select")
       .merge(container);
 
     let select = container.selectAll(`select#d3plus-Select-${this._uuid}`).data([0]);
