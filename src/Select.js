@@ -55,23 +55,29 @@ export default class Select extends BaseClass {
     if (this._container === void 0) this.container(select("body").append("div").node());
     const that = this;
 
-    let container = this._container.selectAll(`select#d3plus-Select-${this._uuid}`).data([0]);
+    let container = this._container.selectAll(`div#d3plus-Form-${this._uuid}`).data([0]);
     const svg = this._container.node().tagName.toLowerCase() === "foreignobject";
 
-    container = container.enter().append(svg ? "xhtml:select" : "select")
+    container = container.enter().append(svg ? "xhtml:div" : "div")
+        .attr("id", `d3plus-Form-${this._uuid}`)
+        .attr("class", "d3plus-Form")
+      .merge(container);
+
+    let select = container.selectAll(`select#d3plus-Select-${this._uuid}`).data([0]);
+    select = select.enter().append(svg ? "xhtml:select" : "select")
         .attr("id", `d3plus-Select-${this._uuid}`)
         .attr("class", "d3plus-Select")
-      .merge(container)
+      .merge(select)
         .call(stylize, this._selectStyle)
         .on("change.d3plus", function() {
           that.selected(this.value);
         });
 
     for (const event in this._on) {
-      if ({}.hasOwnProperty.call(this._on, event)) container.on(event, this._on[event]);
+      if ({}.hasOwnProperty.call(this._on, event)) select.on(event, this._on[event]);
     }
 
-    const options = container.selectAll("option")
+    const options = select.selectAll("option")
       .data(this._options, (d, i) => this._value(d, i));
 
     options.exit().remove();
@@ -84,7 +90,8 @@ export default class Select extends BaseClass {
         .html((d, i) => this._text(d, i))
         .property("selected", (d, i) => this._selected === void 0 ? !i : `${this._value(d, i)}` === `${this._selected}`);
 
-    const label = this._container.selectAll(`label#d3plus-Label-${this._uuid}`).data(this._label ? [0] : []);
+    const label = container.selectAll(`label#d3plus-Label-${this._uuid}`)
+      .data(this._label ? [0] : []);
     label.exit().remove();
     label.enter().insert(svg ? "xhtml:label" : "label", `#d3plus-Select-${this._uuid}`)
         .attr("id", `d3plus-Label-${this._uuid}`)
