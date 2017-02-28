@@ -64,7 +64,7 @@ export default class Select extends BaseClass {
       .merge(container);
 
     let select = container.selectAll(`select#d3plus-Select-${this._uuid}`).data([0]);
-    select = select.enter().append(svg ? "xhtml:select" : "select")
+    select = select.enter().append("select")
         .attr("id", `d3plus-Select-${this._uuid}`)
         .attr("class", "d3plus-Select")
       .merge(select)
@@ -93,7 +93,7 @@ export default class Select extends BaseClass {
     const label = container.selectAll(`label#d3plus-Label-${this._uuid}`)
       .data(this._label ? [0] : []);
     label.exit().remove();
-    label.enter().insert(svg ? "xhtml:label" : "label", `#d3plus-Select-${this._uuid}`)
+    label.enter().insert("label", `#d3plus-Select-${this._uuid}`)
         .attr("id", `d3plus-Label-${this._uuid}`)
         .attr("class", "d3plus-Label")
         .attr("for", `d3plus-Select-${this._uuid}`)
