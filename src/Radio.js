@@ -69,12 +69,12 @@ export default class Radio extends BaseClass {
 
     radios = radios.enter().append("label")
         .attr("class", "d3plus-Label")
-        .attr("for", (d, i) => this._value(d, i))
+        .attr("for", (d, i) => `${this._uuid}-${this._value(d, i)}`)
         .each(function(d, i) {
           const input = document.createElement("input");
           input.setAttribute("type", "radio");
           input.setAttribute("name", `d3plus-Radio-${that._uuid}`);
-          input.setAttribute("id", that._value(d, i));
+          input.setAttribute("id", `${that._uuid}-${that._value(d, i)}`);
           input.setAttribute("value", that._value(d, i));
           this.parentNode.insertBefore(input, this.nextSibling);
         })
