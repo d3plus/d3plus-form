@@ -20,20 +20,97 @@ If you use NPM, `npm install d3plus-form`. Otherwise, download the [latest relea
 ### Classes
 
 <dl>
+<dt><a href="#Button">Button</a> ⇐ <code><a href="https://github.com/d3plus/d3plus-common#BaseClass">BaseClass</a></code></dt>
+<dd></dd>
 <dt><a href="#Radio">Radio</a> ⇐ <code><a href="https://github.com/d3plus/d3plus-common#BaseClass">BaseClass</a></code></dt>
 <dd></dd>
 <dt><a href="#Select">Select</a> ⇐ <code><a href="https://github.com/d3plus/d3plus-common#BaseClass">BaseClass</a></code></dt>
 <dd></dd>
 </dl>
 
+<a name="Button"></a>
+
+### Button ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
+**Kind**: global class  
+**Extends**: <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
+
+* [Button](#Button) ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
+    * [new Button()](#new_Button_new)
+    * [.render()](#Button.render) ↩︎
+    * [.buttonStyle([*value*])](#Button.buttonStyle) ↩︎
+    * [.container([*selector*])](#Button.container) ↩︎
+    * [.text([*value*])](#Button.text) ↩︎
+    * [.value([*value*])](#Button.value) ↩︎
+
+<a name="new_Button_new"></a>
+
+#### new Button()
+Creates a set of HTML radio input elements.
+
+<a name="Button.render"></a>
+
+#### Button.render() ↩︎
+Renders the element to the page.
+
+**Kind**: static method of <code>[Button](#Button)</code>  
+**Chainable**  
+<a name="Button.buttonStyle"></a>
+
+#### Button.buttonStyle([*value*]) ↩︎
+Sets the css styles for the <input type="radio"> elements.
+
+**Kind**: static method of <code>[Button](#Button)</code>  
+**Chainable**  
+
+| Param | Type |
+| --- | --- |
+| [*value*] | <code>Object</code> | 
+
+<a name="Button.container"></a>
+
+#### Button.container([*selector*]) ↩︎
+If *selector* is specified, sets the SVG container element to the specified d3 selector or DOM element and returns the current class instance. If *selector* is not specified, returns the current SVG container element, which is `undefined` by default.
+
+**Kind**: static method of <code>[Button](#Button)</code>  
+**Chainable**  
+
+| Param | Type |
+| --- | --- |
+| [*selector*] | <code>String</code> \| <code>HTMLElement</code> | 
+
+<a name="Button.text"></a>
+
+#### Button.text([*value*]) ↩︎
+Sets the inner text for each <button> element.
+
+**Kind**: static method of <code>[Button](#Button)</code>  
+**Chainable**  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| [*value*] | <code>function</code> \| <code>String</code> | <code>function(d) { return d.text; }</code> | 
+
+<a name="Button.value"></a>
+
+#### Button.value([*value*]) ↩︎
+Sets the value for each <button> element.
+
+**Kind**: static method of <code>[Button](#Button)</code>  
+**Chainable**  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| [*value*] | <code>function</code> | <code>function(d) { return d.value; }</code> | 
+
 <a name="Radio"></a>
 
 ### Radio ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
 **Kind**: global class  
-**Extends:** <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
+**Extends**: <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
 
 * [Radio](#Radio) ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
     * [new Radio()](#new_Radio_new)
+    * [.data([*value*])](#Radio.data) ↩︎
     * [.render()](#Radio.render) ↩︎
     * [.checked([*value*])](#Radio.checked) ↩︎
     * [.container([*selector*])](#Radio.container) ↩︎
@@ -49,6 +126,18 @@ If you use NPM, `npm install d3plus-form`. Otherwise, download the [latest relea
 
 #### new Radio()
 Creates a set of HTML radio input elements.
+
+<a name="Radio.data"></a>
+
+#### Radio.data([*value*]) ↩︎
+Defines the array of values to be created as <button> tags. If no value is passed, the current array is returned.
+
+**Kind**: static method of <code>[Radio](#Radio)</code>  
+**Chainable**  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| [*value*] | <code>Array</code> | <code>[]</code> | 
 
 <a name="Radio.render"></a>
 
@@ -79,7 +168,7 @@ If *selector* is specified, sets the SVG container element to the specified d3 s
 
 | Param | Type |
 | --- | --- |
-| [*selector*] | <code>String</code> &#124; <code>HTMLElement</code> | 
+| [*selector*] | <code>String</code> \| <code>HTMLElement</code> | 
 
 <a name="Radio.labelStyle"></a>
 
@@ -151,7 +240,7 @@ Sets the inner text for each <option> element.
 
 | Param | Type | Default |
 | --- | --- | --- |
-| [*value*] | <code>function</code> &#124; <code>String</code> | <code>function(d) { return d.text; }</code> | 
+| [*value*] | <code>function</code> \| <code>String</code> | <code>function(d) { return d.text; }</code> | 
 
 <a name="Radio.value"></a>
 
@@ -169,7 +258,7 @@ Sets the value for each <option> element.
 
 ### Select ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
 **Kind**: global class  
-**Extends:** <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
+**Extends**: <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
 
 * [Select](#Select) ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
     * [new Select()](#new_Select_new)
@@ -206,7 +295,7 @@ If *selector* is specified, sets the SVG container element to the specified d3 s
 
 | Param | Type |
 | --- | --- |
-| [*selector*] | <code>String</code> &#124; <code>HTMLElement</code> | 
+| [*selector*] | <code>String</code> \| <code>HTMLElement</code> | 
 
 <a name="Select.label"></a>
 
@@ -290,7 +379,7 @@ Sets the inner text for each <option> element.
 
 | Param | Type | Default |
 | --- | --- | --- |
-| [*value*] | <code>function</code> &#124; <code>String</code> | <code>function(d) { return d.text; }</code> | 
+| [*value*] | <code>function</code> \| <code>String</code> | <code>function(d) { return d.text; }</code> | 
 
 <a name="Select.value"></a>
 
@@ -306,4 +395,4 @@ Sets the value for each <option> element.
 
 
 
-###### <sub>Documentation generated on Wed, 01 Mar 2017 16:41:42 GMT</sub>
+###### <sub>Documentation generated on Fri, 24 Mar 2017 20:49:41 GMT</sub>

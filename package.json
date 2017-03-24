@@ -1,6 +1,6 @@
 {
   "name": "d3plus-form",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Javascript rendered input forms.",
   "main": "build/d3plus-form.js",
   "jsnext:main": "index",
