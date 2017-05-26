@@ -1,15 +1,12 @@
 # d3plus-form
 
-[![NPM Release](http://img.shields.io/npm/v/d3plus-form.svg?style=flat)](https://www.npmjs.org/package/d3plus-form)
-[![Build Status](https://travis-ci.org/d3plus/d3plus-form.svg?branch=master)](https://travis-ci.org/d3plus/d3plus-form)
-[![Dependency Status](http://img.shields.io/david/d3plus/d3plus-form.svg?style=flat)](https://david-dm.org/d3plus/d3plus-form)
-[![Slack](https://img.shields.io/badge/Slack-Click%20to%20Join!-green.svg?style=social)](https://goo.gl/forms/ynrKdvusekAwRMPf2)
+[![NPM Release](http://img.shields.io/npm/v/d3plus-form.svg?style=flat)](https://www.npmjs.org/package/d3plus-form) [![Build Status](https://travis-ci.org/d3plus/d3plus-form.svg?branch=master)](https://travis-ci.org/d3plus/d3plus-form) [![Dependency Status](http://img.shields.io/david/d3plus/d3plus-form.svg?style=flat)](https://david-dm.org/d3plus/d3plus-form) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat)](https://gitter.im/d3plus/)
 
 Javascript rendered input forms.
 
 ## Installing
 
-If you use NPM, `npm install d3plus-form`. Otherwise, download the [latest release](https://github.com/d3plus/d3plus-form/releases/latest). The released bundle supports AMD, CommonJS, and vanilla environments. Create a [custom bundle using Rollup](https://github.com/rollup/rollup) or your preferred bundler. You can also load directly from [d3plus.org](https://d3plus.org):
+If you use NPM, run `npm install d3plus-form --save`. Otherwise, download the [latest release](https://github.com/d3plus/d3plus-form/releases/latest). The released bundle supports AMD, CommonJS, and vanilla environments. You can also load directly from [d3plus.org](https://d3plus.org):
 
 ```html
 <script src="https://d3plus.org/js/d3plus-form.v0.2.full.min.js"></script>
@@ -17,24 +14,22 @@ If you use NPM, `npm install d3plus-form`. Otherwise, download the [latest relea
 
 
 ## API Reference
-### Classes
 
-<dl>
-<dt><a href="#Button">Button</a> ⇐ <code><a href="https://github.com/d3plus/d3plus-common#BaseClass">BaseClass</a></code></dt>
-<dd></dd>
-<dt><a href="#Radio">Radio</a> ⇐ <code><a href="https://github.com/d3plus/d3plus-common#BaseClass">BaseClass</a></code></dt>
-<dd></dd>
-<dt><a href="#Select">Select</a> ⇐ <code><a href="https://github.com/d3plus/d3plus-common#BaseClass">BaseClass</a></code></dt>
-<dd></dd>
-</dl>
+##### Classes
+* [Button](#Button)
+* [Radio](#Radio)
+* [Select](#Select)
+
+---
 
 <a name="Button"></a>
+#### **Button** [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Button.js#L8)
 
-### Button ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
-**Kind**: global class  
-**Extends**: <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
 
-* [Button](#Button) ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
+This is a global class, and extends all of the methods and functionality of [<code>BaseClass</code>](https://github.com/d3plus/d3plus-common#BaseClass).
+
+
+* [Button](#Button) ⇐ [<code>BaseClass</code>](https://github.com/d3plus/d3plus-common#BaseClass)
     * [new Button()](#new_Button_new)
     * [.render()](#Button.render) ↩︎
     * [.buttonStyle([*value*])](#Button.buttonStyle) ↩︎
@@ -42,73 +37,58 @@ If you use NPM, `npm install d3plus-form`. Otherwise, download the [latest relea
     * [.text([*value*])](#Button.text) ↩︎
     * [.value([*value*])](#Button.value) ↩︎
 
-<a name="new_Button_new"></a>
+<a name="new_Button_new" href="new_Button_new">#</a> new **Button**()
 
-#### new Button()
 Creates a set of HTML radio input elements.
 
-<a name="Button.render"></a>
 
-#### Button.render() ↩︎
+
+
+<a name="Button.render" href="Button.render">#</a> Button.**render**() [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Button.js#L38)
+
 Renders the element to the page.
 
-**Kind**: static method of <code>[Button](#Button)</code>  
-**Chainable**  
-<a name="Button.buttonStyle"></a>
 
-#### Button.buttonStyle([*value*]) ↩︎
+This is a static method of [<code>Button</code>](#Button), and is chainable with other methods of this Class.
+
+<a name="Button.buttonStyle" href="Button.buttonStyle">#</a> Button.**buttonStyle**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Button.js#L76)
+
 Sets the css styles for the <input type="radio"> elements.
 
-**Kind**: static method of <code>[Button](#Button)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>Object</code> | 
+This is a static method of [<code>Button</code>](#Button), and is chainable with other methods of this Class.
 
-<a name="Button.container"></a>
+<a name="Button.container" href="Button.container">#</a> Button.**container**([*selector*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Button.js#L86)
 
-#### Button.container([*selector*]) ↩︎
 If *selector* is specified, sets the SVG container element to the specified d3 selector or DOM element and returns the current class instance. If *selector* is not specified, returns the current SVG container element, which is `undefined` by default.
 
-**Kind**: static method of <code>[Button](#Button)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*selector*] | <code>String</code> \| <code>HTMLElement</code> | 
+This is a static method of [<code>Button</code>](#Button), and is chainable with other methods of this Class.
 
-<a name="Button.text"></a>
+<a name="Button.text" href="Button.text">#</a> Button.**text**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Button.js#L106)
 
-#### Button.text([*value*]) ↩︎
 Sets the inner text for each <button> element.
 
-**Kind**: static method of <code>[Button](#Button)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>function</code> \| <code>String</code> | <code>function(d) { return d.text; }</code> | 
+This is a static method of [<code>Button</code>](#Button), and is chainable with other methods of this Class.
 
-<a name="Button.value"></a>
+<a name="Button.value" href="Button.value">#</a> Button.**value**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Button.js#L116)
 
-#### Button.value([*value*]) ↩︎
 Sets the value for each <button> element.
 
-**Kind**: static method of <code>[Button](#Button)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>function</code> | <code>function(d) { return d.value; }</code> | 
+This is a static method of [<code>Button</code>](#Button), and is chainable with other methods of this Class.
+
+---
 
 <a name="Radio"></a>
+#### **Radio** [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L8)
 
-### Radio ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
-**Kind**: global class  
-**Extends**: <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
 
-* [Radio](#Radio) ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
+This is a global class, and extends all of the methods and functionality of [<code>BaseClass</code>](https://github.com/d3plus/d3plus-common#BaseClass).
+
+
+* [Radio](#Radio) ⇐ [<code>BaseClass</code>](https://github.com/d3plus/d3plus-common#BaseClass)
     * [new Radio()](#new_Radio_new)
     * [.data([*value*])](#Radio.data) ↩︎
     * [.render()](#Radio.render) ↩︎
@@ -122,145 +102,100 @@ Sets the value for each <button> element.
     * [.text([*value*])](#Radio.text) ↩︎
     * [.value([*value*])](#Radio.value) ↩︎
 
-<a name="new_Radio_new"></a>
+<a name="new_Radio_new" href="new_Radio_new">#</a> new **Radio**()
 
-#### new Radio()
 Creates a set of HTML radio input elements.
 
-<a name="Radio.data"></a>
 
-#### Radio.data([*value*]) ↩︎
+
+
+<a name="Radio.data" href="Radio.data">#</a> Radio.**data**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Button.js#L96)
+
 Defines the array of values to be created as <button> tags. If no value is passed, the current array is returned.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>Array</code> | <code>[]</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.render"></a>
+<a name="Radio.render" href="Radio.render">#</a> Radio.**render**() [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L48)
 
-#### Radio.render() ↩︎
 Renders the element to the page.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
-<a name="Radio.checked"></a>
 
-#### Radio.checked([*value*]) ↩︎
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
+
+<a name="Radio.checked" href="Radio.checked">#</a> Radio.**checked**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L128)
+
 Defines the checked input.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>function</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.container"></a>
+<a name="Radio.container" href="Radio.container">#</a> Radio.**container**([*selector*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L138)
 
-#### Radio.container([*selector*]) ↩︎
 If *selector* is specified, sets the SVG container element to the specified d3 selector or DOM element and returns the current class instance. If *selector* is not specified, returns the current SVG container element, which is `undefined` by default.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*selector*] | <code>String</code> \| <code>HTMLElement</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.labelStyle"></a>
+<a name="Radio.labelStyle" href="Radio.labelStyle">#</a> Radio.**labelStyle**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L148)
 
-#### Radio.labelStyle([*value*]) ↩︎
 Sets the css styles for the <label> element.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>Object</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.legend"></a>
+<a name="Radio.legend" href="Radio.legend">#</a> Radio.**legend**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L158)
 
-#### Radio.legend([*value*]) ↩︎
 Creates a <legend> tag for the <select> element.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>String</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.legendStyle"></a>
+<a name="Radio.legendStyle" href="Radio.legendStyle">#</a> Radio.**legendStyle**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L168)
 
-#### Radio.legendStyle([*value*]) ↩︎
 Sets the css styles for the <legend> element.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>Object</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.options"></a>
+<a name="Radio.options" href="Radio.options">#</a> Radio.**options**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L178)
 
-#### Radio.options([*value*]) ↩︎
 Defines the array of values to be used as <option> tags inside of the <select> element. If no value is passed, the current array is returned.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>Array</code> | <code>[]</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.radioStyle"></a>
+<a name="Radio.radioStyle" href="Radio.radioStyle">#</a> Radio.**radioStyle**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L188)
 
-#### Radio.radioStyle([*value*]) ↩︎
 Sets the css styles for the <input type="radio"> elements.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>Object</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.text"></a>
+<a name="Radio.text" href="Radio.text">#</a> Radio.**text**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L198)
 
-#### Radio.text([*value*]) ↩︎
 Sets the inner text for each <option> element.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>function</code> \| <code>String</code> | <code>function(d) { return d.text; }</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
 
-<a name="Radio.value"></a>
+<a name="Radio.value" href="Radio.value">#</a> Radio.**value**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Radio.js#L208)
 
-#### Radio.value([*value*]) ↩︎
 Sets the value for each <option> element.
 
-**Kind**: static method of <code>[Radio](#Radio)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>function</code> | <code>function(d) { return d.value; }</code> | 
+This is a static method of [<code>Radio</code>](#Radio), and is chainable with other methods of this Class.
+
+---
 
 <a name="Select"></a>
+#### **Select** [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L8)
 
-### Select ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
-**Kind**: global class  
-**Extends**: <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>  
 
-* [Select](#Select) ⇐ <code>[BaseClass](https://github.com/d3plus/d3plus-common#BaseClass)</code>
+This is a global class, and extends all of the methods and functionality of [<code>BaseClass</code>](https://github.com/d3plus/d3plus-common#BaseClass).
+
+
+* [Select](#Select) ⇐ [<code>BaseClass</code>](https://github.com/d3plus/d3plus-common#BaseClass)
     * [new Select()](#new_Select_new)
     * [.render()](#Select.render) ↩︎
     * [.container([*selector*])](#Select.container) ↩︎
@@ -273,126 +208,83 @@ Sets the value for each <option> element.
     * [.text([*value*])](#Select.text) ↩︎
     * [.value([*value*])](#Select.value) ↩︎
 
-<a name="new_Select_new"></a>
+<a name="new_Select_new" href="new_Select_new">#</a> new **Select**()
 
-#### new Select()
 Creates an HTML select element.
 
-<a name="Select.render"></a>
 
-#### Select.render() ↩︎
+
+
+<a name="Select.render" href="Select.render">#</a> Select.**render**() [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L53)
+
 Renders the element to the page.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
-<a name="Select.container"></a>
 
-#### Select.container([*selector*]) ↩︎
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
+
+<a name="Select.container" href="Select.container">#</a> Select.**container**([*selector*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L114)
+
 If *selector* is specified, sets the SVG container element to the specified d3 selector or DOM element and returns the current class instance. If *selector* is not specified, returns the current SVG container element, which is `undefined` by default.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*selector*] | <code>String</code> \| <code>HTMLElement</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.label"></a>
+<a name="Select.label" href="Select.label">#</a> Select.**label**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L124)
 
-#### Select.label([*value*]) ↩︎
 Creates a <label> tag for the <select> element.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>String</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.labelStyle"></a>
+<a name="Select.labelStyle" href="Select.labelStyle">#</a> Select.**labelStyle**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L134)
 
-#### Select.labelStyle([*value*]) ↩︎
 Sets the css styles for the <label> element.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>Object</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.options"></a>
+<a name="Select.options" href="Select.options">#</a> Select.**options**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L144)
 
-#### Select.options([*value*]) ↩︎
 Defines the array of values to be used as <option> tags inside of the <select> element. If no value is passed, the current array is returned.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>Array</code> | <code>[]</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.optionStyle"></a>
+<a name="Select.optionStyle" href="Select.optionStyle">#</a> Select.**optionStyle**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L154)
 
-#### Select.optionStyle([*value*]) ↩︎
 Sets the css styles for the <option> elements.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>Object</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.selected"></a>
+<a name="Select.selected" href="Select.selected">#</a> Select.**selected**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L164)
 
-#### Select.selected([*value*]) ↩︎
 Defines the selected option.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>function</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.selectStyle"></a>
+<a name="Select.selectStyle" href="Select.selectStyle">#</a> Select.**selectStyle**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L174)
 
-#### Select.selectStyle([*value*]) ↩︎
 Sets the css styles for the <select> element.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type |
-| --- | --- |
-| [*value*] | <code>Object</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.text"></a>
+<a name="Select.text" href="Select.text">#</a> Select.**text**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L184)
 
-#### Select.text([*value*]) ↩︎
 Sets the inner text for each <option> element.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>function</code> \| <code>String</code> | <code>function(d) { return d.text; }</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
-<a name="Select.value"></a>
+<a name="Select.value" href="Select.value">#</a> Select.**value**([*value*]) [<>](https://github.com/d3plus/d3plus-form/blob/master/src/Select.js#L194)
 
-#### Select.value([*value*]) ↩︎
 Sets the value for each <option> element.
 
-**Kind**: static method of <code>[Select](#Select)</code>  
-**Chainable**  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| [*value*] | <code>function</code> | <code>function(d) { return d.value; }</code> | 
+This is a static method of [<code>Select</code>](#Select), and is chainable with other methods of this Class.
 
+---
 
-
-###### <sub>Documentation generated on Fri, 24 Mar 2017 20:49:41 GMT</sub>
+###### <sub>Documentation generated on Fri, 26 May 2017 19:54:40 GMT</sub>
