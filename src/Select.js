@@ -22,21 +22,21 @@ export default class Select extends BaseClass {
     super();
 
     this._labelStyle = {
-      "font-family": "Verdana",
-      "font-size": "12px",
+      "font-family": "'Roboto', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif",
+      "font-size": "14px",
       "margin-right": "5px"
     };
     this._options = [];
     this._optionStyle = {
-      "font-family": "Verdana",
-      "font-size": "12px"
+      "font-family": "'Roboto', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif",
+      "font-size": "14px"
     };
     this._selectStyle = {
       "background": "#fafafa",
       "border": "1px solid #ccc",
       "border-radius": "0",
-      "font-family": "Verdana",
-      "font-size": "12px",
+      "font-family": "'Roboto', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif",
+      "font-size": "14px",
       "outline": "0",
       "padding": "3px 5px 4px"
     };

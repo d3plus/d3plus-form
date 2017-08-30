@@ -22,13 +22,13 @@ export default class Radio extends BaseClass {
     super();
 
     this._labelStyle = {
-      "font-family": "Verdana",
-      "font-size": "12px",
+      "font-family": "'Roboto', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif",
+      "font-size": "14px",
       "padding-right": "5px"
     };
     this._legendStyle = {
-      "font-family": "Verdana",
-      "font-size": "12px",
+      "font-family": "'Roboto', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif",
+      "font-size": "14px",
       "padding-right": "5px"
     };
     this._options = [];

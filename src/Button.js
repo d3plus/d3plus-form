@@ -22,7 +22,9 @@ export default class Button extends BaseClass {
     super();
 
     this._buttonStyle = {
-      margin: "0 5px"
+      "font-family": "'Roboto', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif",
+      "font-size": "14px",
+      "margin": "0 5px"
     };
     this._data = [];
     this._text = accessor("text");
