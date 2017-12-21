@@ -15,7 +15,7 @@ If you use NPM, run `npm install d3plus-form --save`. Otherwise, download the [l
 
 ## API Reference
 
-##### Classes
+##### 
 * [Button](#Button)
 * [Radio](#Radio)
 * [Select](#Select)
@@ -318,4 +318,4 @@ This is a static method of [<code>Select</code>](#Select), and is chainable with
 
 
 
-###### <sub>Documentation generated on Wed, 30 Aug 2017 21:01:39 GMT</sub>
+###### <sub>Documentation generated on Thu, 21 Dec 2017 20:50:02 GMT</sub>
