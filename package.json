@@ -45,5 +45,6 @@
     "build/d3plus-form.js.map",
     "build/d3plus-form.min.js",
     "es"
-  ]
+  ],
+  "sideEffects": false
 }
