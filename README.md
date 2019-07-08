@@ -1,6 +1,6 @@
 # d3plus-form
 
-[![NPM Release](http://img.shields.io/npm/v/d3plus-form.svg?style=flat)](https://www.npmjs.org/package/d3plus-form) [![Build Status](https://travis-ci.org/d3plus/d3plus-form.svg?branch=master)](https://travis-ci.org/d3plus/d3plus-form) [![Dependency Status](http://img.shields.io/david/d3plus/d3plus-form.svg?style=flat)](https://david-dm.org/d3plus/d3plus-form) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat)](https://gitter.im/d3plus/)
+[![NPM Release](http://img.shields.io/npm/v/d3plus-form.svg?style=flat)](https://www.npmjs.org/package/d3plus-form) [![Build Status](https://travis-ci.org/d3plus/d3plus-form.svg?branch=master)](https://travis-ci.org/d3plus/d3plus-form) [![Dependency Status](http://img.shields.io/david/d3plus/d3plus-form.svg?style=flat)](https://david-dm.org/d3plus/d3plus-form) [![Gitter](https://img.shields.io/badge/-chat_on_gitter-brightgreen.svg?style=flat&logo=gitter-white)](https://gitter.im/d3plus/) 
 
 Javascript rendered input forms.
 
@@ -318,4 +318,4 @@ This is a static method of [<code>Select</code>](#Select), and is chainable with
 
 
 
-###### <sub>Documentation generated on Thu, 21 Dec 2017 20:50:02 GMT</sub>
+###### <sub>Documentation generated on Mon, 08 Jul 2019 21:05:56 GMT</sub>
