@@ -318,4 +318,4 @@ This is a static method of [<code>Select</code>](#Select), and is chainable with
 
 
 
-###### <sub>Documentation generated on Mon, 08 Jul 2019 21:05:56 GMT</sub>
+###### <sub>Documentation generated on Thu, 11 Jul 2019 13:09:04 GMT</sub>
