@@ -9,7 +9,7 @@ Javascript rendered input forms.
 If you use NPM, run `npm install d3plus-form --save`. Otherwise, download the [latest release](https://github.com/d3plus/d3plus-form/releases/latest). The released bundle supports AMD, CommonJS, and vanilla environments. You can also load directly from [d3plus.org](https://d3plus.org):
 
 ```html
-<script src="https://d3plus.org/js/d3plus-form.v0.2.full.min.js"></script>
+<script src="https://d3plus.org/js/d3plus-form.v0.3.full.min.js"></script>
 ```
 
 
@@ -318,4 +318,4 @@ This is a static method of [<code>Select</code>](#Select), and is chainable with
 
 
 
-###### <sub>Documentation generated on Thu, 11 Jul 2019 13:09:04 GMT</sub>
+###### <sub>Documentation generated on Tue, 14 Jul 2020 20:48:46 GMT</sub>
